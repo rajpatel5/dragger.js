@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dragger - API</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./api.css">
+
+    <script src="./navigate.js" defer></script>
+</head>
+
+<body>
+    <section class="banner" id="sec">
+        <header>
+            <a href="./index.html" class="logo">Dragger</a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+        <div class="api">
+            <h1 class="center colour">API</h1>
+            <h3 class="api-version">V1.0.0</h2>
+            <br>
+
+            <!-- Getting Started -->
+            <h2 class="api-header">GETTING STARTED</h2>
+            <p>
+                To use the Dragger API, You will need jQuery. Add the two following scripts to
+                your html file. You will need the path to the dragger.js library on your local machine.
+            </p>
+            <br>
+            <div class="container">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="api-html">
+                        <pre class="language-html started">
+                            <code class="language-html">
+    <span class="token punctuation">&lt;</span><span class="token tag">script</span> <span class="token attr-name">src</span><span class="token operator">=</span><span class="token punctuation">"</span><span class="token attr-value">https://code.jquery.com/jquery-1.11.2.min.js</span><span class="token punctuation">"</span><span class="token punctuation">&gt;&lt;/</span><span class="token tag">script</span><span class="token punctuation">&gt;</span>
+    <span class="token punctuation">&lt;</span><span class="token tag">script</span> <span class="token attr-name">src</span><span class="token operator">=</span><span class="token punctuation">"</span><span class="token attr-value">/path/to/dragger.js</span><span class="token punctuation">"</span><span class="token punctuation">&gt;&lt;/</span><span class="token tag">script</span><span class="token punctuation">&gt;</span>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Draggable API -->
+            <h2 class="api-header">Draggable</h2>
+            <p>
+                Allows DOM elements to be dragged up, down, left, or right. Also 
+                allows for them to be resized to be made bigger or smaller.
+            </p>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Function type</th>
+                        <th>Parameters</th>
+                        <th>Code</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Constructor</td>
+                        <td>
+                            1.) objectClassName: String <br>
+                            <br>
+                            2.) resizablility: Boolean (optional) 
+                        </td>
+                        <td>
+                            <div class="code">
+                                <pre class="language-js">
+                                    <code class="language-js"> 
+Draggable<span class="token punctuation">(</span><span class="token string">objectClassName</span><span class="token punctuation">,</span> <span class="token punctuation">[</span> <span class="token boolean">resizablility</span> <span class="token punctuation">] );</span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </td>
+                        <td>
+                            Creates an instance of the draggable class
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Listener</td>
+                        <td>
+                            None 
+                        </td>
+                        <td>
+                            <div class="code">
+                                <pre class="language-js">
+                                    <code class="language-js"> 
+<span class="token function">addListeners</span><span class="token punctuation">();</span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </td>
+                        <td>
+                            Adds listeners to an instance to allow for interactions
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <br>
+
+            <!-- Droppable API -->
+            <h2 class="api-header">Droppable</h2>
+            <p>
+                Allows DOM elements to be dragged and dropped into specified containers.
+            </p>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Function type</th>
+                        <th>Parameters</th>
+                        <th>Code</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Constructor</td>
+                        <td>
+                            1.) objectClassName: String <br>
+                            <br>
+                            2.) containerClassName: String
+                        </td>
+                        <td>
+                            <div class="code">
+                                <pre class="language-js">
+                                    <code class="language-js"> 
+Droppable<span class="token punctuation">(</span><span class="token string">objectClassName</span><span class="token punctuation">,</span> <span class="token string">containerClassName</span><span class="token punctuation">);</span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </td>
+                        <td>
+                            Creates an instance of the droppable class
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Listener</td>
+                        <td>
+                            None 
+                        </td>
+                        <td>
+                            <div class="code">
+                                <pre class="language-js">
+                                    <code class="language-js"> 
+<span class="token function">addListeners</span><span class="token punctuation">();</span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </td>
+                        <td>
+                            Adds listeners to an instance to allow for interactions
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <br>
+
+            <!-- Sortable API -->
+            <h2 class="api-header">Sortable</h2>
+            <p>
+                Allows multiple DOM elements to be dragged and dropped into specified containers.
+                They can be dropped into any order.
+            </p>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Function type</th>
+                        <th>Parameters</th>
+                        <th>Code</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Constructor</td>
+                        <td>
+                            1.) objectsClassName: String <br>
+                            <br>
+                            2.) containersClassName: String <br>
+                            <br>
+                            3.) indicies: Array&ltInt&gt (optional)
+                        </td>
+                        <td>
+                            <div class="code">
+                                <pre class="language-js">
+                                    <code class="language-js"> 
+Sortable<span class="token punctuation">(</span><span class="token string">objectsClassName</span><span class="token punctuation">,</span> <span class="token string">containersClassName</span><span class="token punctuation">,</span> <span class="token punctuation">[</span> <span class="token boolean">indicies</span> <span class="token punctuation">] );</span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </td>
+                        <td>
+                            Creates an instance of the sortable class
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Listener</td>
+                        <td>
+                            None 
+                        </td>
+                        <td>
+                            <div class="code">
+                                <pre class="language-js">
+                                    <code class="language-js"> 
+<span class="token function">addListeners</span><span class="token punctuation">();</span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </td>
+                        <td>
+                            Adds listeners to an instance to allow for interactions
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <br>
+
+            <!-- DraggableSlider API -->
+            <h2 class="api-header">DraggableSlider</h2>
+            <p>
+                Allows multiple DOM elements to be dragged left-to-right or right-to-left altogether.
+            </p>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Function type</th>
+                        <th>Parameters</th>
+                        <th>Code</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Constructor</td>
+                        <td>
+                            1.) objectClassName: String <br>
+                            <br>
+                            2.) containerClassName: String
+                        </td>
+                        <td>
+                            <div class="code">
+                                <pre class="language-js">
+                                    <code class="language-js"> 
+DraggableSlider<span class="token punctuation">(</span><span class="token string">objectClassName</span><span class="token punctuation">,</span> <span class="token string">containerClassName</span><span class="token punctuation">);</span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </td>
+                        <td>
+                            Creates an instance of the draggable slider class
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Listener</td>
+                        <td>
+                            None 
+                        </td>
+                        <td>
+                            <div class="code">
+                                <pre class="language-js">
+                                    <code class="language-js"> 
+<span class="token function">addListeners</span><span class="token punctuation">();</span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </td>
+                        <td>
+                            Adds listeners to an instance to allow for interactions
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <br>
+
+            <!-- Rotatable API -->
+            <h2 class="api-header">Rotatable</h2>
+            <p>
+                Allows multiple DOM elements to be dragged and rotated to create a 360 degree spin effect.
+                They can be dragged left-to-right or right-to-left.
+            </p>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Function type</th>
+                        <th>Parameters</th>
+                        <th>Code</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Constructor</td>
+                        <td>
+                            1.) objectClassName: String <br>
+                            <br>
+                            2.) imagesPath: String <br>
+                            <br>
+                            3.) totalImages: Integer <br>
+                            <br>
+                            4.) imageExtension: String (Default: png) <br>
+                        </td>
+                        <td>
+                            <div class="code">
+                                <pre class="language-js special">
+                                    <code class="language-js special"> 
+<span class="token function">$</span><span class="token punctuation">(</span>document<span class="token punctuation">).</span><span class="token function">ready</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">() {</span>
+    <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">objectClassName</span><span class="token punctuation">).</span><span class="token function">rotatable</span><span class="token punctuation">({</span>
+        imgSequencePath<span class="token punctuation">:</span> <span class="token string">imagesPath</span><span class="token punctuation">,</span>
+        numOfImgs<span class="token punctuation">:</span> <span class="token boolean">totalImages</span><span class="token punctuation">,</span>
+        imgExt<span class="token punctuation">:</span> <span class="token string">imageExtension</span><span class="token punctuation">,</span>
+    <span class="token punctuation">});</span>
+<span class="token punctuation">});</span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </td>
+                        <td>
+                            Creates an instance of the rotatable class
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <br>
+        </div>
+    </section>
+    <div id="navigation">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="../dragger.js.zip">Download</a></li>
+            <li><a href="./examples.html">Examples</a></li>
+            <li><a href="./api.html">API</a></li>
+            <li><a href="https://github.com/csc309-winter-2021/js-library-patel732">GitHub</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

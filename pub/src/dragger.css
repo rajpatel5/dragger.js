@@ -1,0 +1,51 @@
+/* For Droppable */
+._dragger_hold{
+    border: 3px black solid;
+    border-radius: 16px;
+    opacity: 0.999;
+}
+
+._dragger_hovered{
+    background: grey;
+    border-style: dashed;
+}
+
+._dragger_invisible {
+    display: none;
+} 
+
+/* For Sortable */
+._dragger_dragging {
+    opacity: 0.5;
+}
+
+/* To resize objects */
+._dragger_resizer {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-bottom-right-radius: 16px;
+    background-color: rgb(220, 220, 220);
+    z-index: 99;
+    bottom: 0px;
+    right: 0px;
+    cursor: se-resize;
+}
+
+/* To resize objects */
+._dragger_resizer_rounded {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-bottom-right-radius: 16px;
+    background-color: royalblue;
+    z-index: 999;
+    bottom: 2px;
+    right: 2px;
+    cursor: default;
+}
+
+._dragger_prevent {
+    opacity: 0.5;
+    cursor: no-drop;
+}
