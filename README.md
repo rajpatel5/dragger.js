@@ -11,5 +11,13 @@ your html file. You will need the path to the dragger.js library on your local m
 `<script src="/path/to/dragger.js"></script>`
 
 
-### Link to API
-https://dragger-lib.herokuapp.com/examples/api.html
+### Description
+Dragger.js is a library that alleviates the stress of having to create drag and drop objects
+with smooth animations. It gives functionalities such as moving, sorting, and re-positioning
+items via the mouse with a grabbing action. It can be used to implement features such as
+sortable lists, or to create movable objects without them having to worry about the details and
+complexities that come with creating such objects with a smooth animation-like drag and drop
+action. Dragger.js allows to drag objects to place them in any order, or objects can be swapped,
+or dropped in certain containers. Users will be able to interact with web apps more easily and
+enthusiastically!
+
